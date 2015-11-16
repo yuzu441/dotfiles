@@ -17,7 +17,7 @@ JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8
 export JAVA_TOOL_OPTIONS
 
 # 環境変数
-if [ -e ~/.local.zshrc ]; then
+if [ -e ~/.zshrc.local ]; then
   source ~/.zshrc.local
 fi
 
