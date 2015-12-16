@@ -76,6 +76,10 @@ set cursorline
 highlight Normal ctermbg=none
 set background=dark
 
+" ファイル関連
+set autoread
+set confirm
+
 " 括弧補完
 " inoremap {<Enter> {}<Left><CR><ESC><S-a>
 " inoremap [<Enter> []<Left><CR><ESC><S-a>
