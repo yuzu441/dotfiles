@@ -31,3 +31,7 @@ fi
 # bindkey -v # vimモード
 setopt nobeep # ビープ音要らない
 export EDITOR=vim
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/yuzu/.sdkman"
+[[ -s "/Users/yuzu/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/yuzu/.sdkman/bin/sdkman-init.sh"
