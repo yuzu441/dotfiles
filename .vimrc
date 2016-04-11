@@ -18,6 +18,7 @@ NeoBundle 'bronson/vim-trailing-whitespace'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'hail2u/vim-css3-syntax'
 NeoBundle 'derekwyatt/vim-scala'
+NeoBundle 'scrooloose/syntastic'
 call neobundle#end()
 filetype plugin indent  on
 
