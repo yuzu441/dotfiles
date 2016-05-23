@@ -88,6 +88,3 @@ set confirm
 inoremap { {}<Left>
 inoremap [ []<Left>
 inoremap ( ()<Left>
-inoremap < <><Left>
-
-
