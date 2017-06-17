@@ -1,13 +1,18 @@
 if &compatible
   set nocompatible
 endif
-set runtimepath^=/Users/yuzu/.config/dein/repos/github.com/Shougo/dein.vim
+
 let dein_plugin_dir = expand('~/.cache/dein')
 let nvim_dir = expand('~/.config/nvim/')
 
+let dein_path = dein_plugin_dir . '/repos/github.com/Shougo/dein.vim/'
+if !isdirectory(dein_path)
+  call system('git clone https://github.com/Shougo/dein.vim ' . shellescape(dein_path))
+endif
+execute 'set runtimepath^=' . dein_path
+
 if dein#load_state(dein_plugin_dir)
   call dein#begin(dein_plugin_dir)
-  " call dein#add('tomasr/molokai')
   call dein#load_toml(nvim_dir.'dein.toml', {'lazy': 0})
   " call dein#load_toml('dein_lazy.toml', {'lazy': 1})
 
@@ -17,8 +22,8 @@ endif
 
 filetype plugin indent  on
 
-if !has('vim_starting')
-  call neobundle#call_hook('on_source')
+if has('vim_starting') && dein#check_install()
+  call dein#install()
 endif
 
 let g:indent_guides_enable_on_vim_startup=1

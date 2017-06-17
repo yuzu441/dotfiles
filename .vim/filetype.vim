@@ -7,4 +7,5 @@ augroup filetypedetect
   au BufRead,BufNewFile *.py setfiletype python
   au BufRead,BufNewFile *.html setfiletype html
   au BufRead,BufNewFile *.css setfiletype css
+  au BufRead,BufNewFile *.go setfiletype golang
 augroup END

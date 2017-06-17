@@ -12,3 +12,12 @@ repo = 'tomasr/molokai'
 
 [[plugins]]
 repo = 'nathanaelkane/vim-indent-guides'
+
+
+[[plugins]]
+repo = 'bronson/vim-trailing-whitespace'
+
+
+[[plugins]]
+repo = 'fatih/vim-go'
+on_ft = 'golang'
