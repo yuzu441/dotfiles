@@ -81,6 +81,8 @@ set background=dark
 set autoread
 set confirm
 
+set sh=fish
+
 " 括弧補完
 " inoremap {<Enter> {}<Left><CR><ESC><S-a>
 " inoremap [<Enter> []<Left><CR><ESC><S-a>

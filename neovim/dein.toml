@@ -21,3 +21,9 @@ repo = 'bronson/vim-trailing-whitespace'
 [[plugins]]
 repo = 'fatih/vim-go'
 on_ft = 'golang'
+
+
+[[plugin]]
+repo = 'rust-lang/rust.vim'
+on_ft = 'rust'
+
