@@ -1,10 +1,17 @@
-set -x PATH $HOME/.nodebrew/current/bin $PATH
-set -x PATH $HOME/.cargo/bin $PATH
-set -x PATH $HOME/bin $PATH
-
 set -x ANDROID_HOME $HOME/Android/Sdk
-set -x PATH $ANDROID_HOME/tools $PATH
-set -x PATH $ANDROID_HOME/tools/bin $PATH
-set -x PATH $ANDROID_HOME/platform-tools
+set -x GOENV_ROOT $HOME/.goenv
+set -x GOPATH $HOME/develop
 
-rbenv init - | source
+set -x PATH $PATH \
+  $HOME/.nodebrew/current/bin \
+  $HOME/.cargo/bin \
+  $HOME/.yarn/bin \
+  $HOME/.local/bin \
+  $ANDROID_HOME/tools \
+  $ANDROID_HOME/tools/bin \
+  $ANDROID_HOME/platform-tools \
+  $GOENV_ROOT/bin \
+  $GOPATH/bin
+
+alias nodejs=node
+status --is-interactive; and source (goenv init -|psub)
