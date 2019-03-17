@@ -14,4 +14,6 @@ set -x PATH $PATH \
   $GOPATH/bin
 
 alias nodejs=node
+gl='git log --oneline --decorate --graph --branches --tags --remotes'
+
 status --is-interactive; and source (goenv init -|psub)
