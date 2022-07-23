@@ -1,4 +1,4 @@
-function repo_peco
+function repo_search
   ghq list | fzf | read select_dir
 
   if [ $select_dir ]
