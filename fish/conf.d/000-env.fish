@@ -10,10 +10,10 @@ set -x NODE_REPL_HISTORY $XDG_DATA_HOME/node_repl_history
 set -x VOLTA_HOME $XDG_DATA_HOME/volta
 set -x GO111MODULE on
 set -x GOPATH $XDG_DATA_HOME/go
-set -x DOCKER_CONFIG $XDG_CONFIG_HOME/docker
-set -x DOCKER_HOST unix://$XDG_RUNTIME_DIR/docker.sock
+set -x GOBIN $HOME/.local/bin
 
 set -x EDITOR vim
 
+set -x PATH /usr/local/go/bin $GOBIN $PATH
 set -x PATH $CARGO_HOME/bin $PATH
 set -x PATH $VOLTA_HOME/bin $PATH
