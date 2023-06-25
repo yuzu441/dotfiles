@@ -8,6 +8,7 @@ else if type batcat >> /dev/null
   # ubuntu
   alias cat=batcat
 end
+
 switch (uname)
 case Darwin
   eval (/opt/homebrew/bin/brew shellenv)
