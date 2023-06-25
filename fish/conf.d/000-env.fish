@@ -17,3 +17,4 @@ set -x EDITOR vim
 set -x PATH /usr/local/go/bin $GOBIN $PATH
 set -x PATH $CARGO_HOME/bin $PATH
 set -x PATH $VOLTA_HOME/bin $PATH
+set -x PATH $GOPATH/bin $PATH
