@@ -1,4 +1,4 @@
-alias ls=exa
+alias ls=eza
 alias ll='ls -al'
 alias gl='git log --oneline --decorate --graph --branches --tags --remotes'
 
