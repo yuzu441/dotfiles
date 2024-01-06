@@ -12,9 +12,14 @@ set -x GO111MODULE on
 set -x GOPATH $XDG_DATA_HOME/go
 set -x GOBIN $HOME/.local/bin
 
+set -x GHQ_ROOT $HOME/develop
+
 set -x EDITOR vim
 
-set -x PATH /usr/local/go/bin $GOBIN $PATH
-set -x PATH $CARGO_HOME/bin $PATH
-set -x PATH $VOLTA_HOME/bin $PATH
-set -x PATH $GOPATH/bin $PATH
+fish_add_path /usr/local/go/bin $GOBIN
+fish_add_path $CARGO_HOME/bin
+fish_add_path $VOLTA_HOME/bin
+fish_add_path $GOPATH/bin
+
+fish_add_path $GHQ_ROOT/github.com/yuzu441/tools/target/release
+fish_add_path $GHQ_ROOT/github.com/yuzu441/tools/bin
