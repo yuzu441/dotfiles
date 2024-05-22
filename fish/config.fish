@@ -9,9 +9,9 @@ case '*'
   #echo none
 end
 
-if type bat >> /dev/null
+if type bat >/dev/null 2>&1
   alias cat=bat
-else if type batcat >> /dev/null
+else if type batcat >/dev/null 2>&1
   # ubuntu
   alias cat=batcat
 end
