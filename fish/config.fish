@@ -1,4 +1,8 @@
-alias ls=eza
+if type eza >/dev/null 2>&1
+  alias ls=eza
+else
+  echo "'eza' not found. Falling back to default 'ls'."
+end
 alias ll='ls -al'
 alias gl='git log --oneline --decorate --graph --branches --tags --remotes'
 
