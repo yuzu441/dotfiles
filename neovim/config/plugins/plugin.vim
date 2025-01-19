@@ -11,6 +11,11 @@ Plug 'mattn/vim-lsp-settings'
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
 
+Plug 'nvim-treesitter/nvim-treesitter'
+Plug 'neovim/nvim-lspconfig'
+Plug 'ray-x/go.nvim'
+Plug 'ray-x/guihua.lua'
+
 call plug#end()
 
 function! s:on_lsp_buffer_enabled() abort
