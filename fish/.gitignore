@@ -1,0 +1,4 @@
+completions
+conf.d/9*.fish
+fish_plugins
+fish_variables

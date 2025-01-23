@@ -18,7 +18,7 @@ set -gx EDITOR vim
 
 fish_add_path /usr/local/go/bin $GOBIN
 fish_add_path $CARGO_HOME/bin
-fish_add_path $VOLTA_HOME/bin
+# fish_add_path $VOLTA_HOME/bin
 fish_add_path $GOPATH/bin
 
 fish_add_path $GHQ_ROOT/github.com/yuzu441/tools/target/release

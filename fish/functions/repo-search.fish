@@ -1,4 +1,4 @@
-function repo_search
+function repo-search
   ghq list | fzf | read select_dir
 
   if [ $select_dir ]
