@@ -21,7 +21,8 @@ return {
     capabilities = require("cmp_nvim_lsp").default_capabilities(capabilities)
 
     local servers = {
-      lua_ls = {}
+      lua_ls = {},
+      basedpyright = {},
     }
 
     for server, opts in pairs(servers) do
