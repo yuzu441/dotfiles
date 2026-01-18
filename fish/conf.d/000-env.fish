@@ -14,7 +14,7 @@ set -gx GOBIN $HOME/.local/bin
 
 set -gx GHQ_ROOT $HOME/develop
 
-set -gx EDITOR vim
+set -gx EDITOR nvim
 
 fish_add_path /usr/local/go/bin $GOBIN
 fish_add_path $CARGO_HOME/bin
