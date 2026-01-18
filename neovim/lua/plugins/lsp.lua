@@ -23,6 +23,7 @@ return {
     local servers = {
       lua_ls = {},
       basedpyright = {},
+      rust_analyzer = {},
     }
 
     for server, opts in pairs(servers) do

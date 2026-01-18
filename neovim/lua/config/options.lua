@@ -1,5 +1,6 @@
 -- 環境設定系
 vim.opt.title = true
+vim.opt.number = true
 
 -- インデント設定
 vim.opt.tabstop = 2
@@ -40,3 +41,11 @@ vim.opt.confirm = true
 
 -- colorscheme
 vim.cmd.colorscheme("backpack")
+
+-- lsp
+vim.opt.updatetime = 250
+vim.api.nvim_create_autocmd("CursorHold", {
+  callback = function()
+    vim.diagnostic.open_float(nil, { focus = false })
+  end,
+})
