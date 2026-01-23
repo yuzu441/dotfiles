@@ -5,6 +5,13 @@ return {
   dependencies = {
     "nvim-tree/nvim-web-devicons",
   },
+  keys = {
+    {
+      "<leader>e",
+      "<cmd>NvimTreeFindFileToggle<CR>",
+      { noremap = true, silent = true, desc = "Toggle NvimTree (find file)" },
+    }
+  },
 
   init = function()
     -- disable netrw at the very start
