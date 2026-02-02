@@ -3,7 +3,7 @@ theme = TokyoNight Night
 
 # fonts
 font-family = "HackGen Console NF"
-font-size = 16
+font-size = 14
 
 # background
 background-opacity = 0.85
