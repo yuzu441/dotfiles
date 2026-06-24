@@ -2,6 +2,7 @@
 if test (uname) = "Darwin"
   # homebrew setting
   eval (/opt/homebrew/bin/brew shellenv)
+  set -x HOMEBREW_NO_UPGRADE_AUTO_UPDATES_CASKS 1
 
   # android setting
   set -x ANDROID_HOME $HOME/Library/Android/sdk
