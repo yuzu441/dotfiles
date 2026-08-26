@@ -3,14 +3,12 @@ if test (uname) = "Darwin"
   # homebrew setting
   eval (/opt/homebrew/bin/brew shellenv)
   set -x HOMEBREW_NO_UPGRADE_AUTO_UPDATES_CASKS 1
+  fish_add_path $HOMEBREW_PREFIX/opt/ruby/bin
 
   # android setting
   set -x ANDROID_HOME $HOME/Library/Android/sdk
   fish_add_path $ANDROID_HOME/platform-tools
   fish_add_path $ANDROID_HOME/tools
-
-  fish_add_path $HOMEBREW_PREFIX/opt/ruby/bin
-  fish_add_path $HOME/develop/github.com/yuzu441/tools/target/release
 
   fish_add_path $HOME/.cargo/bin
   fish_add_path $HOME/bin
