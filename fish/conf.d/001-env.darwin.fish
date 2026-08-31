@@ -10,7 +10,6 @@ if test (uname) = "Darwin"
   fish_add_path $ANDROID_HOME/platform-tools
   fish_add_path $ANDROID_HOME/tools
 
-  fish_add_path $HOME/.cargo/bin
   fish_add_path $HOME/bin
 
   alias nci=notify-github-actions-ci-finish
